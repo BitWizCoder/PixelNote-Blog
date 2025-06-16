@@ -12,6 +12,10 @@ export default function Nav() {
       link: "/contact",
     },
     {
+      name: "Blog",
+      link: "/blog",
+    },
+    {
       name: "Login",
       link: "/login",
     },

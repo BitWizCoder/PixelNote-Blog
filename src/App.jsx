@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/sign-up" element={<SignUp />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
       </Routes>
     </div>
   );

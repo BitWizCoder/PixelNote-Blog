@@ -1,11 +1,9 @@
-import React from "react";
-import BlogCard from "./BlogCard";
-import Button from "./Button";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import BlogCard from "../components/BlogCard";
 import api from "../api/api";
-import { useEffect } from "react";
+import Button from "../components/Button";
 
-export default function BlogPosts() {
+export default function Blog() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -33,7 +31,6 @@ export default function BlogPosts() {
           <BlogCard key={post.id} post={post} />
         ))}
       </div>
-      <Button text="Read All" link="/blog" />
     </div>
   );
 }
